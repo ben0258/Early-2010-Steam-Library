@@ -305,8 +305,9 @@
 	padding: 0px !important;
 }
 
-._3Yf8b2v5oOD8Wqsxu04ar /* Play Button Container Width */ {
+._3Yf8b2v5oOD8Wqsxu04ar /* Play Button Container Width and background color */ {
 	width: fit-content !important;
+    background: rgb(60 60 60 / 65%)
 }
 
 ._3Y87YQY56ZCOqhgcZFaDc5 /* Padding in Play Button Container */ {
@@ -325,7 +326,7 @@
 ._2MBVRXpsw6DUjs7937DWZW /* Game Title */ {
     opacity: 1 !important;
 	padding: 7px 10px 7px 10px !important;
-    top: -53px !important;
+    top: -46px !important;
     left: 6px !important;
 	height: 46px !important;
 	width: fit-content !important;
@@ -1578,6 +1579,13 @@ div._1SyggnJY6qbRSmbZpkK3-H.kGTS55N3oEbxE7HAgE9ZX._2WEwEIAncE7-wa4Ye07a8x > div.
     display: none !important;
 }
 
+/* I don't know where the Library tweaks are, I'm just gonna shove this here */
+/* Remove sidebar icons */
+._1R9r2OBCxAmtuUVrgBEUBw._2E7G8grj_-tgxXbTXs1t2E.ga1hyw11cdBVodrCAidPF,
+._1R9r2OBCxAmtuUVrgBEUBw._2E7G8grj_-tgxXbTXs1t2E._1iNIp1p3ZhPoBwZbkmdb8o {
+  display: none
+}
+
 /* Box-shadow test in other parts */
 
 .WYgDg9NyCcMIVuMyZ_NBC:not(._3J3TT6n8aRkFb-N931OMLl) {
@@ -1957,17 +1965,12 @@ img.HNbe3eZf6H7dtJ042x1vM.HSQWw9HUAP6jtA2OZjS-u {
 	background-color: rgba(56,54,53,.5);
 }
 
+/* Get rid of the Big Picture, VR Mode and News buttons */
+/* Big Picture and VR Mode can still be accessed from the View menu */
+._2Szzh5sKyGgnLUR870zbDE._5wILZhsLODVwGfcJ0hKmJ,
+._2Szzh5sKyGgnLUR870zbDE._3lRfTo8Wo3phXfE1DvK6QW,
 ._2Szzh5sKyGgnLUR870zbDE._3LKQ3S_yqrebeNLF6aeiog {
-    position: var(--bpmposition);
-    right: 0;
-    width: var(--bpmwidth);
-    height: var(--bpmheight);
-	min-width: 0;
-	min-height: 0;
-    background: var(--bpmimg);
-	background-position-x: 1px;
-    top: 40px;
-	z-index: 2;
+    display: none
 }
 
 ._2Szzh5sKyGgnLUR870zbDE._3LKQ3S_yqrebeNLF6aeiog:hover {
@@ -2063,7 +2066,7 @@ img.HNbe3eZf6H7dtJ042x1vM.HSQWw9HUAP6jtA2OZjS-u {
 /* The Top Bar */
 
 ._3Z7VQ1IMk4E3HsHvrkLNgo {
-    height: 103px;
+    height: 109px;
     background-image: var(--logotexture), var(--clientstretch), var(--clientnostretch), var(--clientstretch2), var(--clientstretch3), linear-gradient(to bottom, var(--clientbg-master), var(--dialogbg-master) 175px);
     background-repeat: no-repeat;
     background-position: top right, top left, top left, top left, top left, top left;
@@ -2072,21 +2075,14 @@ img.HNbe3eZf6H7dtJ042x1vM.HSQWw9HUAP6jtA2OZjS-u {
 	background-blend-mode: normal;
 }
 
-._2Szzh5sKyGgnLUR870zbDE:not(._3LKQ3S_yqrebeNLF6aeiog) {
-    width: var(--ctrlbuttonwidth) !important;
-    height: var(--ctrlbuttonheight) !important;
-    margin-right: 10px !important;
-    padding: 0 !important;
-    border: var(--ctrlbuttonborderwidth) solid var(--buttonface2-master);
-    background: linear-gradient(to bottom, var(--ctrlbuttonbackground1), var(--ctrlbuttonbackground2));
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: var(--buttonradius);
-    border-bottom-right-radius: var(--buttonradius);
-}
-
 .Utdt7JrpIm5JlpQmqyj1v {
     width: 60px !important;
+}
+
+/* Menu bar */
+._1Ky59qmywxOUtNcI1cgmkX._3s0lkohH8wU2do0K1il28Y {
+  height: 59.8%;
+  gap: 15.7px;
 }
 
 /*
@@ -2096,6 +2092,11 @@ img.HNbe3eZf6H7dtJ042x1vM.HSQWw9HUAP6jtA2OZjS-u {
 }
 
 */
+
+._3yD46y5pd3zOGR7CzKs0mC {
+  font-size: 11px !important;
+  padding: 0px
+}
 
 ._3yD46y5pd3zOGR7CzKs0mC .nibodjvvrm86uCfnnAn4g.avatarHolder {
     position: absolute;
@@ -2133,15 +2134,11 @@ img.HNbe3eZf6H7dtJ042x1vM.HSQWw9HUAP6jtA2OZjS-u {
 }
 
 ._3yD46y5pd3zOGR7CzKs0mC {
-    padding: 7px;
+    padding: 0px;
 }
 
 .RtSv39ZoBOySnb8XQ5hJf._9YK5IY219Pm_F53DAxyYp ._34bQcTHo5QKzuujoEyU1tm, .RtSv39ZoBOySnb8XQ5hJf._3qhGkQ5qLVNQQ-J2-uPoHt ._34bQcTHo5QKzuujoEyU1tm, svg._34bQcTHo5QKzuujoEyU1tm {
     color: var(--label-master);
-}
-
-.RtSv39ZoBOySnb8XQ5hJf._9YK5IY219Pm_F53DAxyYp:not(._1QQWjaXmb1eTHZpeIhQA_5):hover, .RtSv39ZoBOySnb8XQ5hJf._3qhGkQ5qLVNQQ-J2-uPoHt:not(._1QQWjaXmb1eTHZpeIhQA_5):hover, ._5wILZhsLODVwGfcJ0hKmJ:hover, .Utdt7JrpIm5JlpQmqyj1v:not(._1QQWjaXmb1eTHZpeIhQA_5):hover {
-    background: var(--ctrlbuttonbackgroundhover1);
 }
 
 .DesktopUI .title-area-icon.minimizeButton svg, .friendsui-container .title-area-icon.minimizeButton svg {
@@ -2161,6 +2158,12 @@ img.HNbe3eZf6H7dtJ042x1vM.HSQWw9HUAP6jtA2OZjS-u {
 ._3cykd-VfN_xBxf3Qxriccm._1-9sir4j_KQiMqdkZjQN0u {
     z-index: 2;
 	margin: 0;
+    padding: 0px;
+    max-height: 22px;
+}
+
+._3cykd-VfN_xBxf3Qxriccm {
+  flex-direction: row-reverse;
 }
 
 .title-area-icon-inner #base *, .title-area-icon-inner #Layer_2 * {
@@ -2175,10 +2178,12 @@ img.HNbe3eZf6H7dtJ042x1vM.HSQWw9HUAP6jtA2OZjS-u {
     background: transparent !important;
     position: absolute !important;
     width: calc(100vw - 100px);
-    height: 30px;
+    height: 50px;
     top: -38px;
     left: 0;
 }
+
+._1ZS_xta5HMXzR8JgxDH6n7, ._20QAC4WMXm8qFE8waUT5oo {background-color: transparent !important}
 
 ._1bGewp3tfzqAF6fVTFFUOz .UkR3sY319PuaUNuUWks2K ._2m_orETo6AghzAnc0sISCt .MZPxEZcxAGtPDf1NYtouS, ._1bGewp3tfzqAF6fVTFFUOz .UkR3sY319PuaUNuUWks2K ._3izqEKa-zuPIrUDSm1bRvf {
     color: var(--label-master);
@@ -2204,7 +2209,7 @@ img.HNbe3eZf6H7dtJ042x1vM.HSQWw9HUAP6jtA2OZjS-u {
 }
 
 ._7AlhCx3XGzBeIrQaCneUD {
-    font-size: 24px;
+    font-size: 23px;
 }
 
 ._25lBLzuVeYAUG279up4xP8._2cO0HdvLEGAdhosLekWsmo {
@@ -2274,7 +2279,7 @@ body:not(._1UJDmU3N-pkv7oTJ_Zf9nK) {
 
 ._3vCzSrrXZzZjVJFZNg9SGu {
     background: var(--dialogbg-master);
-    flex: 0 0 63px;
+    flex: 0 0 61px;
 }
 
 ._2foCkpRXhqq0UGVE50BWqj *, .ip-YZhijAMZcuRoXBGiye *, ._1TdaAqMFadi0UTqilrkelR * {
@@ -3231,18 +3236,7 @@ span._2mZ8LlvoUiyeEUtIWuTri {
     color: var(--label-master);
 }
 
-.RtSv39ZoBOySnb8XQ5hJf._3L1c8C0o_xXzPy26aoLBFd {
-    background: url("images/message.png"), linear-gradient(to bottom, var(--ctrlbuttonbackgroundactive1), var(--ctrlbuttonbackgroundactive2)) !important;
-    border: var(--ctrlbuttonborderwidth) solid var(--ctrlbuttonbackgroundactive1);
-    border-bottom-left-radius: var(--buttonradius);
-    border-bottom-right-radius: var(--buttonradius);
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-}
 
-._2Szzh5sKyGgnLUR870zbDE.RtSv39ZoBOySnb8XQ5hJf:not(._3L1c8C0o_xXzPy26aoLBFd) {
-    border: var(--ctrlbuttonborderwidth) solid var(--buttonface2-master);
-}
 
 ._2Szzh5sKyGgnLUR870zbDE.Utdt7JrpIm5JlpQmqyj1v._1nKxf9MhTV5zdB5iUjAgYb:hover {
     background: var(--GameDetailsBlue-master) !important;
@@ -3284,17 +3278,14 @@ span._2mZ8LlvoUiyeEUtIWuTri {
 
 /* Adjust padding properly to match old Steam UI */
 .title-bar-actions.window-controls {
-    margin-right: 2px !important; 
+    max-height: 24px;
 }
 
 /* Remove background color on account ribbon in the titlebar as it historically never had one */
 ._3yD46y5pd3zOGR7CzKs0mC {
     background: none;
-}
-
-/* Adjust notification and announcment buttons to overflow the main window frame */
-._3mGEzzp18imtSzGPkduedi, ._2Szzh5sKyGgnLUR870zbDE._5wILZhsLODVwGfcJ0hKmJ{
-    margin-top: -1px !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+    font-size: 11px !important
 }
 
 ._2b6WkTnmJxMuX1biL7aS3C.Panel {
@@ -3416,6 +3407,20 @@ button._30Og77vH37EtqaKCCDIAP9 svg {
 /* Notification cancer */
 /* I don't know how many more "This Sucks" comments I got left in me */
 
+/* Oh don't worry, my edits are probably worse */
+
+._2Lu3d-5qLmW4i19ysTt2jT._3mGEzzp18imtSzGPkduedi {
+  margin: 40px 0 0 0;
+}
+
+._2Szzh5sKyGgnLUR870zbDE, .RtSv39ZoBOySnb8XQ5hJf, ._3qhGkQ5qLVNQQ-J2-uPoHt {
+    border: 0px;
+    width: 64px;
+    height: 64px;
+    margin: 0px;
+    padding: 0px;
+}
+
 ._5wILZhsLODVwGfcJ0hKmJ._1oEwirQksXfZ-3RWWslbAR {
     background: linear-gradient(to bottom, var(--ctrlbuttonbackgroundactive1), var(--ctrlbuttonbackgroundactive2)) !important;
 }
@@ -3432,6 +3437,10 @@ button._30Og77vH37EtqaKCCDIAP9 svg {
     display: block;
 }
 
+._2Szzh5sKyGgnLUR870zbDE.RtSv39ZoBOySnb8XQ5hJf._9YK5IY219Pm_F53DAxyYp {
+	background: url("images/betahover.png");
+}
+
 .RtSv39ZoBOySnb8XQ5hJf._3L1c8C0o_xXzPy26aoLBFd svg {
     display: none;
 }
@@ -3441,22 +3450,19 @@ button._30Og77vH37EtqaKCCDIAP9 svg {
 }
 
 ._2Szzh5sKyGgnLUR870zbDE.RtSv39ZoBOySnb8XQ5hJf {
-	background-image: url("images/message_read.png"), linear-gradient(to bottom, var(--ctrlbuttonbackground1), var(--ctrlbuttonbackground2));
-	background-repeat: no-repeat !important;
-	background-position: center !important;
-}
-
-._2Szzh5sKyGgnLUR870zbDE.RtSv39ZoBOySnb8XQ5hJf:hover {
-	background-image: url("images/message_read.png"), linear-gradient(to bottom, var(--ctrlbuttonbackgroundhover1), var(--ctrlbuttonbackgroundhover2)) !important;
+	background: url("images/beta.png");
 	background-color: transparent !important;
 	background-repeat: no-repeat !important;
 	background-position: center !important;
 }
+/*
+._2Szzh5sKyGgnLUR870zbDE.RtSv39ZoBOySnb8XQ5hJf:hover {
+	background-image: url("images/betahover.png");
+}
 
-.RtSv39ZoBOySnb8XQ5hJf._3L1c8C0o_xXzPy26aoLBFd:hover {
-	background: url("images/message.png"), linear-gradient(to bottom, var(--ctrlbuttonbackgroundactivehover1), var(--ctrlbuttonbackgroundactivehover2)) !important;
-	background-repeat: no-repeat !important;
-	background-position: center !important;
+/* Spacing between Beta badge and window controls, will fix sometime */
+._2Lu3d-5qLmW4i19ysTt2jT._3mGEzzp18imtSzGPkduedi {
+    left: 0px;
 }
 
 /* Old Styled News */
