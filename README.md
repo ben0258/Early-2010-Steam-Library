@@ -1,4 +1,7 @@
 # Classic Steam Library
+>[!NOTE]
+>If you like this theme, consider supporting the creator of the original theme on Ko-Fi: https://ko-fi.com/naii_
+
 >[!IMPORTANT] 
 >**This theme does not work in the Steam Beta. It only works on the stable branch of Steam!**
 
